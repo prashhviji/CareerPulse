@@ -4,32 +4,38 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+        "As the web developer, I focused on every detail to ensure that the website was both visually appealing and user-friendly ",
       name: "Prasanth",
       designation: "FullStack-Developer",
       src: "/Prasanth.jpeg",
     },
+    //As a machine learning developer, I dedicated myself to designing and implementing intelligent models that address our specific challenges. The solutions we’ve developed have streamlined our workflow and delivered exactly the results we were striving for.
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+        "As a machine learning developer, I concentrated on integrating precise algorithma and innovative solutions that have revolutionized our workflow. This is exactly the transformation we aimed for, it is significantly improved our efficiency and decision-making",
       name: "Prannavakhanth",
       designation: "AIML Member",
       src: "/Prannavakhanth.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+        "As a machine learning developer, I dedicated myself to designing and implementing intelligent models that address our specific challenges. The solutions we have developed have streamlined our workflow and delivered exactly the results we were striving for.",
       name: "Hariprasaadh",
       designation: "AIML Member",
       src: "/Hariprasaadh.jpg",
     },
+
+    //As a front-end web developer, I focused on refining the user interface and incorporating cutting-edge features to enhance the website’s usability. The improvements have not only transformed our workflow but also delivered the seamless experience we envisioned.
     {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      quote: "As a front-end web developer, I focused on refining the user interface and incorporating cutting-edge features to enhance the websites usability. Thr improvements have not only transformed our workflow but also delivered the seamless experience we envisioned",
       name: "venkatakrishnan",
       designation: "Front-end developer",
       src: "/venkatakrishnan.jpeg",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
+
+  // so this is a website where i can go 
+
+  
 }
