@@ -11,14 +11,16 @@ type Testimonial = {
   designation: string;
   src: string;
 };
+
 export const AnimatedTestimonials = ({
   testimonials,
-  autoplay = false,
+  autoplayInterval = 5000, // Added configurable interval
 }: {
   testimonials: Testimonial[];
-  autoplay?: boolean;
+  autoplayInterval?: number;
 }) => {
   const [active, setActive] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -32,22 +34,28 @@ export const AnimatedTestimonials = ({
     return index === active;
   };
 
+  // Auto-animation effect
   useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
+    if (!isPaused) {
+      const interval = setInterval(handleNext, autoplayInterval);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [isPaused, autoplayInterval]);
 
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-        <h1 className="heading pb-4">
+    <div
+      className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      <h1 className="heading pb-4">
         Our <span className="text-purple">Crew</span>
-        </h1>
-      <div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
+      </h1>
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -166,3 +174,5 @@ export const AnimatedTestimonials = ({
     </div>
   );
 };
+
+export default AnimatedTestimonials;
