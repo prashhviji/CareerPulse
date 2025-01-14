@@ -77,7 +77,7 @@ export const projects = [
     des: "Your personalized learning landscape, tailored to all your academic needs.",
     img: "/pr1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://smartquiz.streamlit.app/",
   },
   {
     id: 2,
@@ -85,7 +85,7 @@ export const projects = [
     des: "From job search to placement, your career journey starts here.",
     img: "/pr2.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://smartapply.streamlit.app",
   },
   {
     id: 3,
