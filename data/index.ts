@@ -85,7 +85,7 @@ export const projects = [
     des: "From job search to placement, your career journey starts here.",
     img: "/pr2.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://resumecraft.streamlit.app/",
+    link: "/launchpad",
   },
   {
     id: 3,
