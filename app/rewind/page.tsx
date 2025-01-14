@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
 
           {/** Text Generate Effect */}
           <TextGenerateEffect
-            words="From job search to placement, your career journey starts here."
+            words="Your escape from the academic grind - relax, play, and refresh"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
