@@ -77,7 +77,7 @@ export const projects = [
     des: "Your personalized learning landscape, tailored to all your academic needs.",
     img: "/pr1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://smartquiz.streamlit.app/",
+    link: "/learnscape",
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ export const projects = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/pr3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "/balancebeam",
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ export const projects = [
     des: "Your escape from the academic grind – relax, play, and refresh",
     img: "/pr4.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/rewind",
   },
 ];
 
