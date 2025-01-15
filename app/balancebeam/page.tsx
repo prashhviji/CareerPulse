@@ -39,21 +39,22 @@ const Hero: React.FC = () => {
       <div className="flex justify-center relative my-20 z-10">
         <StarBackground />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-2xl text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-3xl text-center text-blue-100 max-w-80">
             Balance Beam
           </p>
 
           {/** Text Generate Effect */}
           <TextGenerateEffect
             words="Find your equilibrium with our tools for mental well-being and a healthy lifestyle."
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[10px] md:text-5xl lg:text-6xl"
           />
 
-          <a href="#about">
+          <a href="/">
             <MagicButton
-              title="Show my work"
+              title="Home"
               icon={<FaLocationArrow />}
               position="right"
+              
             />
           </a>
         </div>
