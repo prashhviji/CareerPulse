@@ -4,9 +4,9 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "../../components/MagicButton";
 import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect";
 import { Spotlight } from "../../components/ui/Spotlight";
-import ParticlesComponent from "../../components/Particles";
 import { PinContainer } from "@/components/ui/Pin";
 import { projects } from "@/data";
+import StarBackground from "@/components/StarBackground";
 
 const Hero: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <ParticlesComponent />
+        <StarBackground />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-2xl text-center text-blue-100 max-w-80">
             Rewind
