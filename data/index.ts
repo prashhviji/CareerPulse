@@ -93,7 +93,7 @@ export const projects = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/pr3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/balancebeam",
+    link: "/nutrition-dashboard",
   },
   {
     id: 4,
