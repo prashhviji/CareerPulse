@@ -116,19 +116,19 @@ export const projects_1 = [
   },
   {
     id: 2,
-    title: "CareerLaunchpad",
+    title: "Research Bot",
     des: "From job search to placement, your career journey starts here.",
     img: "/pr2.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/launchpad",
+    link: "https://researchmine.streamlit.app/",
   },
   {
     id: 3,
-    title: "Balance Beam",
+    title: "Youtube Transcript",
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/pr3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/nutrition-dashboard",
+    link: "https://youscribe.streamlit.app/",
   },
   {
     id: 4,
