@@ -129,7 +129,7 @@ const NutritionDashboard = () => {
         ...prev.meals,
         { ...foodItem, time: new Date().toLocaleTimeString() },
       ];
-
+      
       // Update totals immediately after adding a new meal
       const newTotals = updatedMeals.reduce(
         (acc, meal) => ({
@@ -165,31 +165,16 @@ const NutritionDashboard = () => {
     if (state.height && state.weight) {
       const heightNum = parseFloat(state.height);
       const weightNum = parseFloat(state.weight);
-
-      if (
-        isNaN(heightNum) ||
-        isNaN(weightNum) ||
-        heightNum <= 0 ||
-        weightNum <= 0
-      ) {
-        setState((prev) => ({
-          ...prev,
-          error: "Please enter valid height and weight values",
-        }));
+      
+      if (isNaN(heightNum) || isNaN(weightNum) || heightNum <= 0 || weightNum <= 0) {
+        setState(prev => ({ ...prev, error: "Please enter valid height and weight values" }));
         return;
       }
-
+      
       const bmiValue = calculateBMI(heightNum, weightNum);
-      setState((prev) => ({
-        ...prev,
-        bmi: parseFloat(bmiValue.toFixed(1)),
-        error: null,
-      }));
+      setState((prev) => ({ ...prev, bmi: parseFloat(bmiValue.toFixed(1)), error: null }));
     } else {
-      setState((prev) => ({
-        ...prev,
-        error: "Please enter both height and weight",
-      }));
+      setState(prev => ({ ...prev, error: "Please enter both height and weight" }));
     }
   };
 
@@ -208,19 +193,19 @@ const NutritionDashboard = () => {
       }
 
       const encodedQuery = encodeURIComponent(query);
-
+      
       const response = await fetch(
         `https://api.edamam.com/api/food-database/v2/parser?app_id=${APP_ID}&app_key=${APP_KEY}&ingr=${encodedQuery}`,
         {
           headers: {
-            Accept: "application/json",
+            'Accept': 'application/json',
           },
         }
       );
 
       if (!response.ok) {
         const errorData = await response.text();
-        console.error("API Error:", response.status, errorData);
+        console.error('API Error:', response.status, errorData);
         throw new Error(`API request failed with status ${response.status}`);
       }
 
@@ -256,13 +241,10 @@ const NutritionDashboard = () => {
         error: null,
       }));
     } catch (err) {
-      console.error("Search Food Error:", err);
+      console.error('Search Food Error:', err);
       setState((prev) => ({
         ...prev,
-        error:
-          err instanceof Error
-            ? err.message
-            : "Failed to fetch food data. Please try again.",
+        error: err instanceof Error ? err.message : "Failed to fetch food data. Please try again.",
         loading: false,
         searchResults: [],
       }));
