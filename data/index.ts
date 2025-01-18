@@ -105,6 +105,41 @@ export const projects = [
   },
 ];
 
+export const projects_1 = [
+  {
+    id: 1,
+    title: "LearnScape",
+    des: "Your personalized learning landscape, tailored to all your academic needs.",
+    img: "/pr1.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/learnscape",
+  },
+  {
+    id: 2,
+    title: "CareerLaunchpad",
+    des: "From job search to placement, your career journey starts here.",
+    img: "/pr2.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/launchpad",
+  },
+  {
+    id: 3,
+    title: "Balance Beam",
+    des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
+    img: "/pr3.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/nutrition-dashboard",
+  },
+  {
+    id: 4,
+    title: "Rewind",
+    des: "Your escape from the academic grind – relax, play, and refresh",
+    img: "/pr4.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/rewind",
+  },
+];
+
 export const testimonials = [
   {
     quote:
