@@ -108,11 +108,11 @@ export const projects = [
 export const projects_1 = [
   {
     id: 1,
-    title: "LearnScape",
+    title: "Quiz Generator",
     des: "Your personalized learning landscape, tailored to all your academic needs.",
     img: "/pr1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/learnscape",
+    link: "https://smartquiz.streamlit.app/",
   },
   {
     id: 2,
