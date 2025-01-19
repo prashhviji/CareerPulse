@@ -14,8 +14,8 @@ import {
 import { Plus, Pizza, X, Scale } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import ParticlesComponent from "@/components/Particles";
 
-// Type Definitions for Edamam Nutrition Analysis API
 interface EdamamNutrient {
   label: string;
   quantity: number;
@@ -235,7 +235,7 @@ const NutritionDashboard = () => {
     }
   };
 
-  // Debounced search effect
+
   useEffect(() => {
     let isActive = true;
     const timeoutId = setTimeout(() => {
@@ -250,9 +250,11 @@ const NutritionDashboard = () => {
     };
   }, [state.searchQuery]);
 
-  // Rest of the component JSX remains the same as your original code
+
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-6">
+    <div className="max-w-6xl mx-auto p-6 space-y-6 ">
+      <ParticlesComponent />
+      <h1 className="text-center text-4xl m-3">Nutrition Dashboard</h1>
       {/* BMI Calculator Card */}
       <Card>
         <CardHeader>
