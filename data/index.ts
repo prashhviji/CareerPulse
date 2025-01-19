@@ -110,7 +110,7 @@ export const projects_1 = [
     id: 1,
     title: "Quiz Generator",
     des: "Your personalized learning landscape, tailored to all your academic needs.",
-    img: "/pr1.jpg",
+    img: "/quiz.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://smartquiz.streamlit.app/",
   },
@@ -118,7 +118,7 @@ export const projects_1 = [
     id: 2,
     title: "Research Bot",
     des: "From job search to placement, your career journey starts here.",
-    img: "/pr2.jpg",
+    img: "/rb.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://researchmine.streamlit.app/",
   },
@@ -126,7 +126,7 @@ export const projects_1 = [
     id: 3,
     title: "Youtube Transcript",
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
-    img: "/pr3.jpg",
+    img: "/yt.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://youscribe.streamlit.app/",
   },
@@ -173,38 +173,6 @@ export const testimonials = [
   },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
 
 export const workExperience = [
   {

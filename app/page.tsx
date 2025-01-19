@@ -11,6 +11,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
+import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Clients />
         <Experience />
         <AnimatedTestimonialsDemo />
+        <SVGMaskEffectDemo />
         <Approach />
 
         <Footer />
