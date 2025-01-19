@@ -4,7 +4,6 @@ import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
-import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
@@ -12,6 +11,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
 import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
+import { FooterDemo } from "@/components/FooterDemo";
 
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
         <SVGMaskEffectDemo />
         <Approach />
 
-        <Footer />
+        <FooterDemo />
       </div>
     </main>
   );
