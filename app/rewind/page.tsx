@@ -5,12 +5,12 @@ import MagicButton from "../../components/MagicButton";
 import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect";
 import { Spotlight } from "../../components/ui/Spotlight";
 import { PinContainer } from "@/components/ui/Pin";
-import { projects } from "@/data";
+import { projects_2 } from "@/data";
 import StarBackground from "@/components/StarBackground";
 
 const Hero: React.FC = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pt-20">
       {/** Spotlights */}
       <div>
         <Spotlight
@@ -38,23 +38,14 @@ const Hero: React.FC = () => {
       <div className="flex justify-center relative my-20 z-10">
         <StarBackground />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-2xl text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-6xl text-center text-blue-100 max-w-80">
             Rewind
           </p>
 
-          {/** Text Generate Effect */}
           <TextGenerateEffect
-            words="Your escape from the academic grind - relax, play, and refresh"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Your escape from the academic grind – relax, play, and refresh"
+            className="text-center text-[25px]"
           />
-
-          <a href="/">
-            <MagicButton
-              title="Home"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
         </div>
       </div>
     </div>
@@ -63,61 +54,61 @@ const Hero: React.FC = () => {
 
 const RecentProjects: React.FC = () => {
   return (
-    <div className="py-20">
-      <h1 className="heading">
-        A small selection of <span className="text-purple">Our Programmes</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-          >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
+    <div className="py-[-20px]" id="products">
+          <h1 className="heading">
+            A small selection of <span className="text-purple">Our Programmes</span>
+          </h1>
+          <div className="flex flex-wrap items-center justify-center p-4 gap-40 mt-10">
+            {projects_2.map((item) => (
+              <div
+                className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+                key={item.id}
               >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <a href={item.link} className="flex items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                <PinContainer
+                  title="/ui.aceternity.com"
+                  href="https://twitter.com/mannupaaji"
+                >
+                  <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                    <div
+                      className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                      style={{ backgroundColor: "#13162D" }}
+                    >
+                      <img src="/bg.png" alt="bgimg" />
+                    </div>
+                    <img
+                      src={item.img}
+                      alt="cover"
+                      className="z-10 absolute bottom-0"
+                    />
+                  </div>
+    
+                  <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                    {item.title}
+                  </h1>
+    
+                  <p
+                    className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                    style={{
+                      color: "#BEC1DD",
+                      margin: "1vh 0",
+                    }}
+                  >
+                    {item.des}
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </a>
+    
+                  <div className="flex items-center justify-between mt-7 mb-3">
+                    <a href={item.link} className="flex items-center">
+                      <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                        Check Live Site
+                      </p>
+                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                    </a>
+                  </div>
+                </PinContainer>
               </div>
-            </PinContainer>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
   );
 };
 

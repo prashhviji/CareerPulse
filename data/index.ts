@@ -110,6 +110,42 @@ export const projects_1 = [
   },
 ];
 
+
+export const projects_2 = [
+  {
+    id: 1,
+    title: "Maze",
+    des: "Navigate twists to find escape path.",
+    img: "/run.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://careertrack-maze-one.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Candy Crush",
+    des: "Colorful match-three candy-crushing fun.",
+    img: "/cc.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://careertrack-candy-crush-sigma.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Tic-Tak-Toe",
+    des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
+    img: "/x.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "Classic strategic three-in-a-row challenge.",
+  },
+  {
+    id: 4,
+    title: "2048",
+    des: "Addictive number-merging strategic puzzle game.",
+    img: "/pr4.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://careertrack-2048-games-iwgv.vercel.app/",
+  },
+];
+
 export const testimonials = [
   {
     quote:
