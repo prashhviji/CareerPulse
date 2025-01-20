@@ -6,8 +6,6 @@ import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/Programmes";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
 import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
@@ -25,15 +23,15 @@ const Home = () => {
         <Hero />
         <Grid />
         <Programmes />
-        
+
         <Clients />
-        <Experience />
-        
+
         <AnimatedTestimonialsDemo />
         <SVGMaskEffectDemo />
         <Approach />
-
-        <FooterDemo />
+        <div className="">
+          <FooterDemo />
+        </div>
       </div>
     </main>
   );

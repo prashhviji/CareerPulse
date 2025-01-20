@@ -43,7 +43,7 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-300">
+    <div className="pointer-events-none w-full h-100 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-300">
       <div className="w-full h-full -mt-7 flex-none inset-0">
         <div className="absolute top-0 inset-x-0 flex justify-center">
           <a

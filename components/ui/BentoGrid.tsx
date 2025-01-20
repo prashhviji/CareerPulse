@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+
 import { cn } from "@/lib/utils";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../MagicButton";
+
 
 export const BentoGrid = ({
   className,
@@ -65,7 +64,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 text-black",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 text-green ",
         className
       )}
       style={{
@@ -74,8 +73,8 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 4 ? "flex justify-center" : ""} h-full`}>
-        <div className="w-full h-full absolute">
+      <div className={`${id === 4 ? "flex justify-center" : ""} h-15`}>
+        <div className="w-full h-[450px] absolute">
           {img && (
             <img
               src={img}
@@ -107,34 +106,17 @@ export const BentoGridItem = ({
           )}
         >
           {description && (
-            <div className="font-sans font-extralight min-h-15 md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+            <div className="font-sans font-extralight min-h-15 md:max-w-32 md:text-xs lg:text-base text-sm text-green-600 z-10">
               {description}
               <div className="rounded-full"></div>
             </div>
           )}
 
-          <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-white">
+          <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-black-500">
             {title}
           </div>
 
-          {id === 5 && (
-            <div className="mt-5 w-full relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "hidden"
-                }`}
-              >
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-              <MagicButton
-                title={copied ? "Email Copied!" : "Copy Contact Email"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-            </div>
-          )}
+          
         </div>
       </div>
     </div>

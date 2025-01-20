@@ -8,13 +8,13 @@ export function SVGMaskEffectDemo() {
         revealText={
           <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
             The first rule of Career Track is you focus on your growth. The
-            second rule of Career Track Club is you empower others to grow.
+            second rule of Career Track  is you empower others to grow.
           </p>
         }
         className="h-[40rem] border rounded-md"
       >
         The first rule of <span className="text-red-500">Career Track </span> is
-        you focus on your growth. The second rule of Career Track Club is you
+        you focus on your growth. The second rule of Career Track  is you
         empower <span className="text-red-500">others to grow.</span>.
       </MaskContainer>
     </div>
