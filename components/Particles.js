@@ -46,7 +46,7 @@ const ParticlesComponent = (props) => {
           value: ["#50C878", "#98FB98", "#90EE90"], // Multiple shades of green
         },
         links: {
-          color: "#006400", 
+          color: "#FFFFFF", 
           distance: 150,
           enable: true,
           opacity: 0.3,
@@ -66,7 +66,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 350,
+          value: 200,
         },
         opacity: {
           value: 0.8, // Slightly reduced opacity for softer look
