@@ -7,11 +7,12 @@ import Grid from "@/components/Grid";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
+import RecentProjects from "@/components/Programmes";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
 import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
 import { FooterDemo } from "@/components/FooterDemo";
+import Programmes from "@/components/Programmes";
 
 
 
@@ -23,7 +24,7 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <RecentProjects />
+        <Programmes />
         
         <Clients />
         <Experience />

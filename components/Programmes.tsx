@@ -4,12 +4,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
-const RecentProjects = () => {
+const Programmes = () => {
   return (
     <div className="py-20" id="products">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">Our Programmes</span>
+        A small selection of <span className="text-purple">Our Programmes</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -65,4 +64,4 @@ const RecentProjects = () => {
   );
 };
 
-export default RecentProjects;
+export default Programmes;

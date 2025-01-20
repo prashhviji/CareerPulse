@@ -14,7 +14,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/p.jpg",
     spareImg: "",
   },
   {
@@ -27,16 +27,7 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  {
-    id: 3,
-    title: "support and guidance for students.",
-    description: "We are committed to continuously enhancing",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
+  
   {
     id: 4,
     title: "Passionate about guiding students to success",
@@ -57,16 +48,6 @@ export const gridItems = [
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you have any queries",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
   },
 ];
 
