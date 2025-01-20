@@ -1,6 +1,6 @@
 import React from "react";
-import { FaLocationArrow, FaComments } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
+import { FaComments } from "react-icons/fa6";
+
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { Spotlight } from "./ui/Spotlight";
 import ParticlesComponent from "./Particles";
@@ -57,13 +57,7 @@ const Hero: React.FC = () => {
             support, and tools for academic success
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show our work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          
         </div>
       </div>
     </div>

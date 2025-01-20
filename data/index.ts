@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { name: "Products", link: "#products" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -143,35 +143,36 @@ export const projects_1 = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Partnering with this platform has been a transformative experience. The AI-driven career guidance tools helped me identify the right career path with clarity and confidence. The mental wellness support features are a game-changer, offering resources that have significantly improved my focus and well-being. I highly recommend this to students looking to achieve academic and personal success.",
+    name: "Emily Carter",
+    title: "University Graduate and Aspiring Data Scientist",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "This platform is a must-have for students navigating their career journey. The personalized recommendations and academic tools helped me plan my next steps with precision. Beyond academics, the mental wellness support offered here helped me stay motivated and maintain balance during a stressful semester. It's truly an all-in-one solution.",
+    name: "Daniel Nguyen",
+    title: "Business Administration Student",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I was amazed by how accurate and helpful the AI-driven career suggestions were. They aligned perfectly with my interests and skills. Additionally, the mental wellness resources provided me with strategies to manage stress and stay productive. It's an invaluable resource for any student.",
+    name: "Sophia Patel",
+    title: "High School Senior Preparing for College",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The platform’s unique combination of AI-driven insights and mental wellness tools has been incredibly empowering. The career guidance helped me choose a field I’m passionate about, and the focus on wellness ensured I stayed on track without feeling overwhelmed. It’s a must for students seeking direction and support.",
+    name: "Liam Roberts",
+    title: "Recent College Graduate and Tech Enthusiast",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "As a student, juggling academics and future planning can be overwhelming. This platform provided the perfect balance of career guidance and mental health resources. The AI recommendations gave me a clear vision for my future, while the wellness tools helped me stay calm and focused. It’s like having a mentor and coach in one place!",
+    name: "Olivia Martinez",
+    title: "Undergraduate Engineering Student",
   },
 ];
+
 
 
 export const workExperience = [
